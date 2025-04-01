@@ -4,44 +4,47 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Substituído por min-height para melhor responsividade */
     margin: 0;
 }
 
 .container {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    padding: 2rem; /* Usando rem para melhor escalabilidade */
+    border-radius: 0.5rem; /* Usando rem para melhor escalabilidade */
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* Usando rem para melhor escalabilidade */
+    width: 100%; /* Tornando o container responsivo */
+    max-width: 300px; /* Mantendo a largura máxima */
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 1rem; /* Usando rem para melhor escalabilidade */
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem; /* Usando rem para melhor escalabilidade */
 }
 
 input[type="text"],
 input[type="tel"],
 input[type="email"],
 input[type="password"] {
-    width: calc(100% - 12px);
-    padding: 8px;
+    width: 100%; /* Tornando responsivo */
+    padding: 0.5rem; /* Usando rem para melhor escalabilidade */
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 0.25rem; /* Usando rem para melhor escalabilidade */
+    box-sizing: border-box; /* Garante que padding e borda sejam incluídos no width */
 }
 
 button {
     background-color: #007bff;
     color: white;
-    padding: 10px 15px;
+    padding: 0.625rem 1rem; /* Usando rem para melhor escalabilidade */
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem; /* Usando rem para melhor escalabilidade */
     cursor: pointer;
+    width: 100%; /* Para os botões ocuparem toda a largura do container */
 }
 
 button[type="reset"] {
@@ -54,5 +57,5 @@ button:hover {
 
 .error {
     color: red;
-    font-size: 0.8em;
+    font-size: 0.8rem; /* Usando rem para melhor escalabilidade */
 }

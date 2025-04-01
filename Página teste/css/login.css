@@ -12,25 +12,26 @@ body {
 
 .login-container {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem; /* Usando rem para melhor escalabilidade */
+    border-radius: 0.5rem; /* Usando rem para melhor escalabilidade */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* Usando rem para melhor escalabilidade */
     width: 300px;
 }
 
 .login-container h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* Usando rem para melhor escalabilidade */
 }
 
 .login-container input[type="text"],
 .login-container input[type="password"] {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin-bottom: 15px;
+    width: 100%; /* Usando 100% para responsividade */
+    padding: 0.625rem; /* Usando rem para melhor escalabilidade */
+    margin-bottom: 1rem; /* Usando rem para melhor escalabilidade */
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 0.25rem; /* Usando rem para melhor escalabilidade */
     box-sizing: border-box;
+    /* form-control do bootstrap ja cuida da estilização, então não precisa de width e padding */
 }
 
 .login-container input.valido {
@@ -43,10 +44,10 @@ body {
 
 .login-container button {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 0.625rem; /* Usando rem para melhor escalabilidade */
+    margin-bottom: 0.625rem; /* Usando rem para melhor escalabilidade */
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem; /* Usando rem para melhor escalabilidade */
     background-color: #007bff;
     color: white;
     cursor: pointer;
@@ -59,7 +60,7 @@ body {
 .login-container a {
     text-align: center;
     display: block;
-    margin-top: 10px;
+    margin-top: 0.625rem; /* Usando rem para melhor escalabilidade */
     color: #007bff;
     text-decoration: none;
 }
